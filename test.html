@@ -1,9 +1,11 @@
-<body><input type="button" value="no" onclick="alert(adverts.advert_one[0].description);"></body>
+<body><input type="button" value="no" onclick="alert(adverts.advert0[0].link);"></body>
+
+<img id="advertRandom">
 
 <script>
 var adverts = { 
   "username" : "Dan",
-  "advert_one" : [
+  "advert0" : [
     {
       "owner" : "daniel4scratchhelp@gmail.com",
       "description" : "Get ur own advert",
@@ -13,6 +15,11 @@ var adverts = {
     }
   ]
 }
+
+var advertType = 'advert'+Math.floor(Math.random() * 2);
+document.getElementById('advertRandom').src = adverts.advert0[0].img_link
+
+
 
 
 </script>

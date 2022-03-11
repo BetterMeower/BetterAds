@@ -1,6 +1,6 @@
-<body><input type="button" value="no" onclick="alert(adverts.advert0[0].link);"></body>
+<body><input style="display:none;" type="button" value="no" onclick="alert(adverts.advert0[0].link);"></body>
 
-<img id="advertRandom">
+<a style="cursor:pointer;" id="advertLink"><img id="advertRandom"></a>
 
 <script>
 var adverts = { 
@@ -18,7 +18,7 @@ var adverts = {
 
 var advertType = 'advert'+Math.floor(Math.random() * 2);
 document.getElementById('advertRandom').src = adverts.advert0[0].img_link
-
+document.getElementById('advertLink').href = adverts.advert0[0].link
 
 
 

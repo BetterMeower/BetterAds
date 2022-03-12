@@ -18,14 +18,33 @@ position: absolute;
   top: 0px;
 z-index:10;
  cursor:pointer;
+background:white;
+border:0.5px solid gray;
+width:20px;
 }
+#advert .button:hover{
+background:lightgray;
+}
+#advert .button.close{
+border-left:opx solid black; 
+}
+#advert .button.info{
+border-right:0px solid black;
+border-radius:0px 0px 0px 5px;
+}
+#advert .button.icon{
+left: 0px;
+  top: 0px;
+width:35;
+border-radius:0px 0px 5px 0px;
 </style>
 </head>
 <body><input style="display:none;" type="button" value="no" onclick="alert(adverts.advert0[0].link);"></body>
 
 <div id="advert">
 <a style="cursor:pointer;" id="advertLink" onclick="window.open(advertLink, '_parent')"><img id="advertRandom"></a>
-<button class="button" onclick="removeimage()">x</button><button class="button" onclick="window.open('https://daniel4-scratch.is-a.dev/adverts', '_parent')" style="margin-right:25px;">i</button>
+<button class="button close" onclick="removeimage()">x</button><button class="button info" onclick="window.open('https://daniel4-scratch.is-a.dev/adverts', '_parent')" style="margin-right:20px;">i</button>
+<button class="button icon" onclick="alert('Ad service provided & made by Daniel4-Scratch. Hosted on github')">AD</button>
 <div>
 <div>
 
@@ -79,7 +98,7 @@ document.getElementById('advertLink').title = chosenAdvert.description
 
 function removeimage(){
 document.getElementById('advertRandom').src = 'https://daniel4-scratch.is-a.dev/adverts/assets/images/removed.png'
- document.getElementById('advertLink').href = '#'
+ document.getElementById('advertLink').href = '#' 
 }
 
 

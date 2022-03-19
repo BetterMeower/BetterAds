@@ -42,7 +42,7 @@ border-radius:0px 0px 5px 0px;
 
 <div id="advert">
 <a style="cursor:pointer;" id="advertLink" onclick="window.open(advertLink, '_parent')"><img id="advertRandom" width="728" height="90"></a>
-<button class="button close" onclick="removeimage()">x</button><button class="button info" onclick="window.open('https://daniel4-scratch.is-a.dev/adverts', '_parent')" style="margin-right:20px;">i</button>
+<button class="button close" id="close" onclick="removeimage()">x</button><button class="button info" onclick="window.open('https://daniel4-scratch.is-a.dev/adverts', '_parent')" style="margin-right:20px;">i</button>
 <button class="button icon" onclick="alert('Ad service provided & made by Daniel4-Scratch. Hosted on github. Learn more at www.daniel4-scratch.is-a.dev/adverts. Email daniel4scratchhelp@gmail.com')">AD</button>
 <div>
 <div>
@@ -98,6 +98,7 @@ document.getElementById('advertLink').title = chosenAdvert.description
 function removeimage(){
 document.getElementById('advertRandom').src = 'https://daniel4-scratch.is-a.dev/adverts/assets/images/removed.png'
  document.getElementById('advertLink').href = '#'
+ document.getElementById('advertLink').style += "display:none;"
 }
 
 

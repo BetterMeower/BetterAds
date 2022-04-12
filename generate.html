@@ -76,18 +76,31 @@ var adverts = {
       "link" : "http://snapfox.glitch.me"
 
     }
+  ],
+ "advert3" : [
+    {
+      "owner" : "daniel4scratchhelp@gmail.com",
+      "description" : "FREE ADVERT SLOT",
+      "img_link" : "https://daniel4-scratch.is-a.dev/adverts/banner1.png",
+      "link" : "https://docs.google.com/forms/d/e/1FAIpQLScjxE8hZ80OPYjK5OxqxZ_m5Q0zpvWZZGXyCAr2seFp-hgKZA/viewform?usp=sf_link"
+
+    }
   ]
 }
 
-var advertType = Math.floor(Math.random() * 3);
+var advertType = Math.floor(Math.random() * 4);
 
  if (advertType == 0){
    var chosenAdvert = adverts.advert0[0]
- }else if (advertType == 1){
+ }
+ else if (advertType == 1){
   var chosenAdvert = adverts.advert1[0]
  }
  else if (advertType == 2){
   var chosenAdvert = adverts.advert2[0]
+ }
+ else if (advertType == 3){
+  var chosenAdvert = adverts.advert3[0]
  }
 
 

@@ -85,10 +85,19 @@ var adverts = {
       "link" : "https://docs.google.com/forms/d/e/1FAIpQLScjxE8hZ80OPYjK5OxqxZ_m5Q0zpvWZZGXyCAr2seFp-hgKZA/viewform?usp=sf_link"
 
     }
+  ],
+ "advert4" : [
+    {
+      "owner" : "polygononscratch@gmail.com",
+      "description" : "Bruh lol XDDDDD ratio + morbillion",
+      "img_link" : "https://daniel4-scratch.is-a.dev/adverts/public/Polygon Scratch.png",
+      "link" : "https://scratch.mit.edu/users/poIygon"
+
+    }
   ]
 }
 
-var advertType = Math.floor(Math.random() * 4);
+var advertType = Math.floor(Math.random() * 5);
 
  if (advertType == 0){
    var chosenAdvert = adverts.advert0[0]
@@ -101,6 +110,9 @@ var advertType = Math.floor(Math.random() * 4);
  }
  else if (advertType == 3){
   var chosenAdvert = adverts.advert3[0]
+ }
+ else if (advertType == 4){
+  var chosenAdvert = adverts.advert4[0]
  }
 
 

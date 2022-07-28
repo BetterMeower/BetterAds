@@ -94,10 +94,18 @@
         "link" : "https://scratch.mit.edu/users/poIygon"
 
       }
+    ],
+  "advert5" : [
+      {
+        "owner" : "SuperCoolPerson#3574",
+        "description" : "Money Taker/Nachos",
+        "img_link" : "https://daniel4-scratch.is-a.dev/adverts/assets/public/advertwtf.jpg",
+        "link" : "https://youtu.be/dQw4w9WgXcQ"
+      }
     ]
   }
 
-  var advertType = Math.floor(Math.random() * 5);
+  var advertType = Math.floor(Math.random() * 6);
 
   if (advertType == 0){
     var chosenAdvert = adverts.advert0[0]
@@ -113,6 +121,9 @@
   }
   else if (advertType == 4){
     var chosenAdvert = adverts.advert4[0]
+  }
+  else if (advertType == 5){
+    var chosenAdvert = adverts.advert5[0]
   }
   document.getElementById('advertRandom').src = chosenAdvert.img_link
   advertLink = chosenAdvert.link

@@ -1,8 +1,8 @@
-# Adverts
-My advertisment system, I may put these on popular projects so other projects get popular.
+# BetterAds
+The better way to place ads on your website
 
-If you really want to add this to ur own site you can
+## Installing on your website
 ```html
-<iframe id="daniel4ScratchAdvert"></iframe>
-<script src="https://daniel4-scratch.is-a.dev/adverts/assets/scripts/embed.js"></script>
+<iframe id="BetterAd"></iframe>
+<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
 ```

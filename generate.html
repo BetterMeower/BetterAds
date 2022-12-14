@@ -57,66 +57,22 @@
   <input style="display:none;" type="button" value="no" onclick="alert(adverts.advert0[0].link);"></body>
   <div id="advert">
     <a style="cursor:pointer;" id="advertLink" onclick="window.open(advertLink, '_parent')"> <img id="advertRandom" width="728" height="90"></a>
-    <button class="button close" id="close" onclick="removeimage()">x</button><button class="button info" onclick="window.open('https://daniel4-scratch.is-a.dev/adverts', '_parent')" style="margin-right:20px;">i</button>
-    <button class="button icon" onclick="alert('Ad service provided & made by Daniel4-Scratch. Hosted on github. Learn more at www.daniel4-scratch.is-a.dev/adverts. Email daniel4scratchhelp@gmail.com')">AD</button>
+    <button class="button close" id="close" onclick="removeimage()">x</button><button class="button info" onclick="window.open('https://adservice.bettermeower.app/adverts', '_parent')" style="margin-right:20px;">i</button>
+    <button class="button icon" onclick="alert('Ad service provided by the BetterMeower Project. Hosted on Cloudflare Pages. Learn more at https://github.com/BetterMeower-Project/BetterAds. Email adservice@bettermeower.app')">AD</button>
   </div>
 
 <script>
   var adverts = {
-    "username" : "Dan",
+    "username" : "BetterAds",
     "advert0" : [
       {
-        "owner" : "https://discord.com/users/810336621198835723",
-        "description" : "https://tools.scratchstatus.org/",
-        "img_link" : "https://daniel4-scratch.is-a.dev/adverts/assets/public/ED1B44C6-692C-4ECD-A9DA-0754CB8D3A44.png",
-        "link" : "https://tools.scratchstatus.org/"
+        "owner" : "https://github.com/BetterMeower-Project",
+        "description" : "Click here to try BetterMeower",
+        "img_link" : "https://adservice.bettermeower.app/assets/public/btor-adv1.png",
+        "link" : "https://bettermeower.app"
 
       }
     ],
-    "advert1" : [
-      {
-        "owner" : "https://discord.com/users/765910070222913556",
-        "description" : "epic superior admin potato that is superior and cool.",
-        "img_link" : "https://avatars.githubusercontent.com/u/49005044?v=4",
-        "link" : "https://github.com/retronbv"
-
-      }
-    ],
-  "advert2" : [
-      {
-        "owner" : "daniel4scratchhelp@gmail.com",
-        "description" : "A dark theme for snap",
-        "img_link" : "https://daniel4-scratch.is-a.dev/adverts/assets/public/snapfox.png",
-        "link" : "http://snapfox.glitch.me"
-
-      }
-    ],
-  "advert3" : [
-      {
-        "owner" : "daniel4scratchhelp@gmail.com",
-        "description" : "FREE ADVERT SLOT",
-        "img_link" : "https://daniel4-scratch.is-a.dev/adverts/banner1.png",
-        "link" : "https://docs.google.com/forms/d/e/1FAIpQLScjxE8hZ80OPYjK5OxqxZ_m5Q0zpvWZZGXyCAr2seFp-hgKZA/viewform?usp=sf_link"
-
-      }
-    ],
-  "advert4" : [
-      {
-        "owner" : "polygononscratch@gmail.com",
-        "description" : "Bruh lol XDDDDD ratio + morbillion",
-        "img_link" : "https://daniel4-scratch.is-a.dev/adverts/assets/public/Polygon Scratch.png",
-        "link" : "https://scratch.mit.edu/users/poIygon"
-
-      }
-    ],
-  "advert5" : [
-      {
-        "owner" : "SuperCoolPerson#3574",
-        "description" : "Money Taker/Nachos",
-        "img_link" : "https://daniel4-scratch.is-a.dev/adverts/assets/public/advertwtf.jpg",
-        "link" : "https://youtu.be/dQw4w9WgXcQ"
-      }
-    ]
   }
 
   var advertType = Math.floor(Math.random() * 6);
@@ -145,7 +101,7 @@
   document.getElementById('advertLink').title = chosenAdvert.description
 
   function removeimage(){
-    document.getElementById('advertRandom').src = 'https://daniel4-scratch.is-a.dev/adverts/assets/images/removed.png'
+    document.getElementById('advertRandom').src = 'https://adservice.bettermeower.app/adverts/assets/images/removed.png'
     document.getElementById('advertLink').href = '#'
     document.getElementById('advertLink').style += "display:none;"
   }

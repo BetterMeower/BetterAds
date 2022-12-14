@@ -74,12 +74,24 @@
 
       }
     ],
+    "advert1" : [
+      {
+        "owner" : "https://github.com/OSMANiCTeam",
+        "description" : "OSMANiC",
+        "img_link" : "https://adservice.bettermeower.app/assets/public/omnc-adv1.png",
+        "link" : "https://osmanic.net"
+
+      }
+    ],
   }
 
-  var advertType = Math.floor(Math.random() * 1);
+  var advertType = Math.floor(Math.random() * 2);
 
   if (advertType == 0){
     var chosenAdvert = adverts.advert0[0]
+  }
+   else if (advertType == 1){
+    var chosenAdvert = adverts.advert1[0]
   }
   
   document.cookie = "advert="+chosenAdvert.owner+"; expires=Thu, 18 Dec 2025 12:00:00 UTC"; 

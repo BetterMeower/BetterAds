@@ -92,9 +92,18 @@
 
       }
     ],
+    "advert3" : [
+      {
+        "owner" : "https://thewind.bettermeower.app",
+        "description" : "The wind",
+        "img_link" : "https://adservice.bettermeower.app/assets/public/ten-adv1.png",
+        "link" : "https://thewind.bettermeower.app"
+
+      }
+    ],
   }
 
-  var advertType = Math.floor(Math.random() * 3);
+  var advertType = Math.floor(Math.random() * 4);
 
   if (advertType == 0){
     var chosenAdvert = adverts.advert0[0]
@@ -105,6 +114,10 @@
   else if (advertType == 2){
     var chosenAdvert = adverts.advert2[0]
   }
+  else if (advertType == 3){
+    var chosenAdvert = adverts.advert3[0]
+  }
+  
   
   document.cookie = "advert="+chosenAdvert.owner+"; expires=Thu, 18 Dec 2025 12:00:00 UTC"; 
   document.getElementById('advertRandom').src = chosenAdvert.img_link

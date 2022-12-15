@@ -127,7 +127,7 @@
   function removeimage(){
     document.getElementById('advertRandom').src = 'https://adservice.bettermeower.app/assets/images/removed.png'
     document.getElementById('advertLink').title = 'Ad removed'
-    document.getElementById('advertLink').href = ''
+    document.getElementById('advertLink').href = document.location.href
     document.getElementById('advertLink').style += "display:none;"
   }
 

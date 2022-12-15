@@ -1,7 +1,5 @@
 
-  else if (advertType == 3){
-    var chosenAdvert = adverts.advert3[0]
-  }
+
   else if (advertType == 4){
     var chosenAdvert = adverts.advert4[0]
   }

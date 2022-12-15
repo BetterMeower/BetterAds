@@ -47,7 +47,7 @@
 
 #advert {
   background: linear-gradient(0deg, rgb(225, 227, 203) 0%, rgb(255, 249, 229) 50%);
-  background-image: url('https://daniel4-scratch.is-a.dev/adverts/assets/images/background-text.png');
+  background-image: url('https://adservice.bettermeower.app/assets/images/background-text.png');
   background-size: 100%;
 }
 
@@ -58,7 +58,6 @@
   <input style="display:none;" type="button" value="no" onclick="alert(adverts.advert0[0].link);"></body>
   <div id="advert">
     <a style="cursor:pointer;" id="advertLink" onclick="window.open(advertLink, '_parent')"> <img id="advertRandom" width="728" height="90"></a>
-    <button class="button close" id="close" onclick="removeimage()">x</button><button class="button info" onclick="window.open('https://adservice.bettermeower.app/adverts', '_parent')" style="margin-right:20px;">i</button>
     <button class="button icon" onclick="alert('Ad service provided by the BetterMeower Project. Hosted on Cloudflare Pages. Learn more at https://github.com/BetterMeower-Project/BetterAds. Email adservice@bettermeower.app')">AD</button>
   </div>
 
@@ -125,7 +124,7 @@
   document.getElementById('advertLink').title = chosenAdvert.description
 
   function removeimage(){
-    document.getElementById('advertRandom').src = 'https://adservice.bettermeower.app/adverts/assets/images/removed.png'
+    document.getElementById('advertRandom').src = 'https://adservice.bettermeower.app/assets/images/removed.png'
     document.getElementById('advertLink').href = '#'
     document.getElementById('advertLink').style += "display:none;"
   }

@@ -1,18 +1,68 @@
+<script>
+	const SPECIAL = (Math.random() + 1).toString(36).substring(5)
+</script>
+<body></body>
+<script>
+  var adverts = {
+        "username": "BetterAds",
+	    "ads": [
+			{
+				"owner": "https://github.com/BetterMeower-Project",
+				"description": "Click here to try BetterMeower",
+				"img_link": "https://adservice.bettermeower.app/assets/public/btor-adv1.png",
+				"link": "https://bettermeower.app"
+			},
+			{
+				"owner": "https://github.com/OSMANiCTeam",
+				"description": "OSMANiC",
+				"img_link": "https://adservice.bettermeower.app/assets/public/omnc-adv1.png",
+				"link": "https://osmanic.net"
+			},
+			{
+				"owner": "https://github.com/JoshAtticus",
+				"description": "Visit the new JoshAtticus website",
+				"img_link": "https://adservice.bettermeower.app/assets/public/jstit-adv1.png",
+				"link": "https://joshatticus.is-a.dev"
+			},
+			{
+				"owner": "https://thewind.bettermeower.app",
+				"description": "The wind",
+				"img_link": "https://adservice.bettermeower.app/assets/public/ten-adv1.png",
+				"link": "https://thewind.bettermeower.app"
+			},
+			{
+				"owner": "https://github.com/mdwalters",
+				"description": "Ihavenoideasforaprojectname",
+				"img_link": "https://adservice.bettermeower.app/assets/public/mwles-adv1.JPG",
+				"link": "https://ihavenoideasforaprojectname.pages.dev/"
+			}
+	    ]
+  }
+  
+  /*
+  <div id="advert">
+    <a style="cursor:pointer;" id="advertLink" onclick="window.open(advertLink, '_parent')"> <img id="advertRandom" width="728" height="90"></a>
+    <button class="button close" id="close" onclick="removeimage()">x</button><button class="button info" onclick="window.open('https://adservice.bettermeower.app/', '_parent')" style="margin-right:20px;">i</button>
+    <button class="button icon" onclick="alert('Ad service provided by the BetterMeower Project. Hosted on Cloudflare Pages. Learn more at https://github.com/BetterMeower-Project/BetterAds. Email adservice@bettermeower.app')">AD</button>
+  </div>
+  */
 
-<head>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  var advertType = Math.floor(Math.random() * adverts.ads.length);
+  var chosenAdvert = adverts.ads[advertType]
+  
+  let style_src = `
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     body{
       margin:0em;
       font-family: 'Open Sans', sans-serif;
     }
-    #advert {
+    #advert-${SPECIAL} {
     position: absolute;
       width:728px; height:90px;
     }
 
-    #advert .button{
-    float:right;
+    #advert-${SPECIAL} .button{
+		float:right;
     margin-top:0px;
     position: absolute;
       right: 0px;
@@ -24,18 +74,19 @@
     width:20px;
     background: linear-gradient(0deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 60%);
     }
-    #advert .button:hover{
+    #advert-${SPECIAL} .button:hover{
     background:lightgray;
     background: linear-gradient(0deg, rgba(224,224,224,1) 0%, rgba(190,190,190,1) 50%);
     }
-    #advert .button.close{
+    #advert-${SPECIAL} .button.close{
     border-left:opx solid black;
     }
-    #advert .button.info{
+    #advert-${SPECIAL} .button.info{
+    margin-right: 20px;
     border-right:0px solid black;
     border-radius:0px 0px 0px 5px;
     }
-    #advert .button.icon{
+    #advert-${SPECIAL} .button.icon{
     left: 0px;
       top: 0px;
     width:35;
@@ -44,104 +95,62 @@
     
 
 
-#advert {
+#advert-${SPECIAL} {
   background: linear-gradient(0deg, rgb(225, 227, 203) 0%, rgb(255, 249, 229) 50%);
   background-image: url('https://adservice.bettermeower.app/assets/images/background-text.png');
   background-size: 100%;
 }
-
-
-  </style>
-</head>
-<body>
-  <script src="https://cdn.counter.dev/script.js" data-id="bfd32a8e-f20b-4f50-b7cd-0716bc56bb2b" data-utcoffset="8"></script>
-  <input style="display:none;" type="button" value="no" onclick="alert(adverts.advert0[0].link);"></body>
-  <div id="advert">
-    <a style="cursor:pointer;" id="advertLink" onclick="window.open(advertLink, '_parent')"> <img id="advertRandom" width="728" height="90"></a>
-    <button class="button close" id="close" onclick="removeimage()">x</button><button class="button info" onclick="window.open('https://adservice.bettermeower.app/', '_parent')" style="margin-right:20px;">i</button>
-    <button class="button icon" onclick="alert('Ad service provided by the BetterMeower Project. Hosted on Cloudflare Pages. Learn more at https://github.com/BetterMeower-Project/BetterAds. Email adservice@bettermeower.app')">AD</button>
-  </div>
-
-<script>
-  var adverts = {
-    "username" : "BetterAds",
-    "advert0" : [
-      {
-        "owner" : "https://github.com/BetterMeower-Project",
-        "description" : "Click here to try BetterMeower",
-        "img_link" : "https://adservice.bettermeower.app/assets/public/btor-adv1.png",
-        "link" : "https://bettermeower.app"
-
-      }
-    ],
-    "advert1" : [
-      {
-        "owner" : "https://github.com/OSMANiCTeam",
-        "description" : "OSMANiC",
-        "img_link" : "https://adservice.bettermeower.app/assets/public/omnc-adv1.png",
-        "link" : "https://osmanic.net"
-
-      }
-    ],
-    "advert2" : [
-      {
-        "owner" : "https://github.com/JoshAtticus",
-        "description" : "Visit the new JoshAtticus website",
-        "img_link" : "https://adservice.bettermeower.app/assets/public/jstit-adv1.png",
-        "link" : "https://joshatticus.is-a.dev"
-
-      }
-    ],
-    "advert3" : [
-      {
-        "owner" : "https://thewind.bettermeower.app",
-        "description" : "The wind",
-        "img_link" : "https://adservice.bettermeower.app/assets/public/ten-adv1.png",
-        "link" : "https://thewind.bettermeower.app"
-
-      }
-    ],
-    "advert4" : [
-      {
-        "owner" : "https://github.com/mdwalters",
-        "description" : "Ihavenoideasforaprojectname",
-        "img_link" : "https://adservice.bettermeower.app/assets/public/mwles-adv1.JPG",
-        "link" : "https://ihavenoideasforaprojectname.pages.dev/"
-
-      }
-    ],
+  `
+  let css = document.createElement('style')
+  css.type = 'text/css';
+  css.appendChild(document.createTextNode(style_src))
+  document.body.appendChild(css)
+	
+  let div = document.createElement('div')
+  div.id = "advert-" + SPECIAL
+	
+  let link = document.createElement('a')
+  link.style = "cursor:pointer;"
+  link.id = "advertLink-" + SPECIAL
+  link.target = "_parent"
+  link.href = chosenAdvert.link
+  link.title = chosenAdvert.description
+  div.appendChild(link)
+	
+  let ad = document.createElement('img')
+  ad.id = "advertRandom-" + SPECIAL
+  ad.src = chosenAdvert.img_link
+  ad.width = 728
+  ad.height = 90
+  link.appendChild(ad)
+	
+  let close = document.createElement('button')
+  close.className = "button close"
+  close.onclick = () => {
+      document.getElementById('advertRandom-' + SPECIAL).src = 'https://adservice.bettermeower.app/assets/images/removed.png'
+	  let link = document.getElementByID('advertLink-' + SPECIAL)
+	  link.title = "Ad removed"
+	  link.href = document.location.href
+	  link.style += "display:none;"
   }
-
-  var advertType = Math.floor(Math.random() * 5);
-
-  if (advertType == 0){
-    var chosenAdvert = adverts.advert0[0]
-  }
-   else if (advertType == 1){
-    var chosenAdvert = adverts.advert1[0]
-  }
-  else if (advertType == 2){
-    var chosenAdvert = adverts.advert2[0]
-  }
-  else if (advertType == 3){
-    var chosenAdvert = adverts.advert3[0]
-  }
-  else if (advertType == 4){
-    var chosenAdvert = adverts.advert4[0]
-  }
+  close.innerHTML = "x"
+  div.appendChild(close)
   
-  
-  document.cookie = "advert="+chosenAdvert.owner+"; expires=Thu, 18 Dec 2025 12:00:00 UTC"; 
-  document.getElementById('advertRandom').src = chosenAdvert.img_link
-  advertLink = chosenAdvert.link
-  document.getElementById('advertLink').title = chosenAdvert.description
-
-  function removeimage(){
-    document.getElementById('advertRandom').src = 'https://adservice.bettermeower.app/assets/images/removed.png'
-    document.getElementById('advertLink').title = 'Ad removed'
-    document.getElementById('advertLink').href = document.location.href
-    document.getElementById('advertLink').style += "display:none;"
+  let info = document.createElement('button')
+  info.className = "button info"
+  info.onclick = () => {
+      window.open('https://adservice.bettermeower.app/', '_parent')
   }
+  info.innerHTML = "i"
+  div.appendChild(info)
+  
+  let ad_btn = document.createElement('button')
+  ad_btn.className = "button icon"
+  ad_btn.onclick = () => {
+      alert('Ad service provided by the BetterMeower Project. Hosted on Cloudflare Pages. Learn more at https://github.com/BetterMeower-Project/BetterAds. Email adservice@bettermeower.app')
+  }
+  ad_btn.innerHTML = "AD"
+  div.appendChild(ad_btn)
 
-
+  document.body.appendChild(div)
 </script>

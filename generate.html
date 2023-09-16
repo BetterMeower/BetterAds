@@ -119,9 +119,18 @@
 
       }
     ],
+    "advert6" : [
+      {
+        "owner" : "https://github.com/derpygamer2142",
+        "description" : "Watch a spinning duck",
+        "img_link" : "https://adservice.bettermeower.app/assets/public/dpygmr-adv2.png",
+        "link" : "https://duckspinning.mitsuaky.com/"
+
+      }
+    ],
   }
 
-  var advertType = Math.floor(Math.random() * 6);
+  var advertType = Math.floor(Math.random() * 7);
 
   if (advertType == 0){
     var chosenAdvert = adverts.advert0[0]
@@ -140,6 +149,9 @@
   }
   else if (advertType == 5){
     var chosenAdvert = adverts.advert5[0]
+  }
+  else if (advertType == 6){
+    var chosenAdvert = adverts.advert6[0]
   }
   
   

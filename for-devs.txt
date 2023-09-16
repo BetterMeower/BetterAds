@@ -1,8 +1,11 @@
 
 
-  else if (advertType == 4){
+  else if (advertType == 6){
     var chosenAdvert = adverts.advert4[0]
   }
-  else if (advertType == 5){
+  else if (advertType == 7){
+    var chosenAdvert = adverts.advert5[0]
+  }
+  else if (advertType == 8){
     var chosenAdvert = adverts.advert5[0]
   }

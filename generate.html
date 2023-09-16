@@ -110,9 +110,18 @@
 
       }
     ],
+    "advert5" : [
+      {
+        "owner" : "https://github.com/derpygamer2142",
+        "description" : "Top 50 cutest dog photos",
+        "img_link" : "https://adservice.bettermeower.app/assets/public/dpygmr-adv1.png",
+        "link" : "https://rickroll.it/rickroll.mp4"
+
+      }
+    ],
   }
 
-  var advertType = Math.floor(Math.random() * 5);
+  var advertType = Math.floor(Math.random() * 6);
 
   if (advertType == 0){
     var chosenAdvert = adverts.advert0[0]
@@ -128,6 +137,9 @@
   }
   else if (advertType == 4){
     var chosenAdvert = adverts.advert4[0]
+  }
+  else if (advertType == 5){
+    var chosenAdvert = adverts.advert5[0]
   }
   
   

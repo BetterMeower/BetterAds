@@ -128,9 +128,18 @@
 
       }
     ],
+    "advert7" : [
+      {
+        "owner" : "https://github.com/3r1s-s",
+        "description" : "follow",
+        "img_link" : "https://adservice.bettermeower.app/assets/public/eris-adv1.png",
+        "link" : "https://scratch.mit.edu/users/3r1s_s/"
+
+      }
+    ],
   }
 
-  var advertType = Math.floor(Math.random() * 7);
+  var advertType = Math.floor(Math.random() * 8);
 
   if (advertType == 0){
     var chosenAdvert = adverts.advert0[0]
@@ -152,6 +161,9 @@
   }
   else if (advertType == 6){
     var chosenAdvert = adverts.advert6[0]
+  }
+  else if (advertType == 7){
+    var chosenAdvert = adverts.advert7[0]
   }
   
   

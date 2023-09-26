@@ -4,8 +4,7 @@ The better way to place ads on your website
 ## Installing on your website
 Place this HTML code anywhere you want to place an ad.
 ```html
-<iframe id="BetterAd"></iframe>
-<script src="https://adservice.bettermeower.app/assets/scripts/embed.js"></script>
+<iframe id="BetterAd" src="https://adservice.bettermeower.app/generate" style="border: medium; width: 728px; height: 90px; overflow: hidden;" scrolling="no"></iframe>
 ```
 
 ## Submitting an ad
